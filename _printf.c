@@ -14,6 +14,7 @@ int (*check_format(const char *format))(va_list)
 	print_a p[] = {
 		{"c", print_c},
 		{"s", print_s},
+		{"b", print_b},
 	};
 
 	for (; p[i].a != NULL; i++)
