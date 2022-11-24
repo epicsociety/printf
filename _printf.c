@@ -15,8 +15,8 @@ int (*check_format(const char *format))(va_list)
 		{"c", print_c},
 		{"s", print_s},
 		{"b", print_b},
-		{"x", print_x},
-		{"S", print_S},
+		/*{"x", print_x},
+		{"S", print_S},*/
 	};
 
 	for (; p[i].a != NULL; i++)

@@ -13,7 +13,7 @@ int print_s(va_list s);
 int print_b(va_list b);
 int print_S(va_list S);
 int print_x(va_list x);
-int print_rot13(va_list list, param_func *func);
+
 
 
 /**
