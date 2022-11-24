@@ -14,9 +14,11 @@ int (*check_format(const char *format))(va_list)
 	print_a p[] = {
 		{"c", print_c},
 		{"s", print_s},
+		{"d", print_d},
+		{"i", print_i},
 		{"b", print_b},
-		/*{"x", print_x},
-		{"S", print_S},*/
+		/*{"x", print_x},*/
+		/*{"S", print_S},*/
 	};
 
 	for (; p[i].a != NULL; i++)
