@@ -2,35 +2,28 @@
 #include <stdlib.h>
 
 /**
- * print_d - prints a decimal base 10
- * @i: base 10 interger to print
+ * print_u - prints an unsigned int
+ * @u: unsigned int to print
  *
  * Return: count of printed digits
 */
-int print_d(va_list d)
+int print_u(va_list u)
 {
-	int a[10];
-	int j = 1, m = 1000000000, sum = 0, counter = 0, n;
+	unsigned int a[10];
+	unsigned int n, j = 1, m = 1000000000, sum = 0;
+	int counter = 0;
 
-	n = va_arg(d, int);
-	if (n < 0)
-	{
-		n *= -1;
-		_putchar('-');
-		counter++;
-	}
+	n = va_arg(u, unsigned int);
 	a[0] = n / m;
-
 	for (; j < 10; j++)
 	{
 		m /= 10;
 		a[j] = (n / m) % 10;
 	}
-
 	for (j = 0; j < 10; j++)
 	{
 		sum += a[j];
-		if (sum != 0 || j == 9)
+		if (sum || j == 9)
 		{
 			_putchar('0' + a[j]);
 			counter++;
