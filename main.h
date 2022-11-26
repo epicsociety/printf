@@ -22,7 +22,7 @@ int print_x(va_list x);
 int print_u(va_list u);
 int print_o(va_list o);
 
-int print_r(va_list r);
+int print_reversed(va_list arg);
 int print_R(va_list R);
 int print_p(va_list p);
 
@@ -42,6 +42,6 @@ typedef struct prints
 	int (*f)(va_list);
 } print_a;
 
-
+/* Helper functions*/
 
 #endif
