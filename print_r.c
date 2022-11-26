@@ -19,7 +19,7 @@ int print_reversed(va_list arg)
 	if (ptr == NULL)
 		return (-1);
 	for (len = 0; ptr[len] != '\0'; len++)
-		_write_char(ptr[len]);
+		_putchar(ptr[len]);
 	free(ptr);
 	return (len);
 }
