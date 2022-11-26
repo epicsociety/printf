@@ -8,6 +8,7 @@
 #include <stdlib.h>
 
 int _putchar(char c);
+int _write_char(char c);
 void _puts(char *str);
 int _printf(const char *format, ...);
 int (*check_format(const char *format))(va_list);
@@ -23,6 +24,7 @@ int print_u(va_list u);
 int print_o(va_list o);
 
 int print_reversed(va_list arg);
+int rot13(va_list);
 int print_R(va_list R);
 int print_p(va_list p);
 
