@@ -13,9 +13,9 @@ int print_reversed(va_list arg)
 	char *ptr;
 
 	str = va_arg(arg, char *);
-	if (str == NULLL)
+	if (str == NULL)
 		return (-1);
-	ptr == rev_string(str);
+	ptr = rev_string(str);
 	if (ptr == NULL)
 		return (-1);
 	for (len = 0; ptr[len] != '\0'; len++)

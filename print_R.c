@@ -23,12 +23,12 @@ int rot13(va_list list)
 		{
 			if (str[i] == s[x])
 			{
-				_write_char(u[x]);
+				_putchar(u[x]);
 				break;
 			}
 		}
 		if (x == 53)
-			_write_char(str[i]);
+			_putchar(str[i]);
 	}
 	return (i);
 }

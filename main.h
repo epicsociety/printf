@@ -31,8 +31,6 @@ int print_p(va_list p);
 int print_b(va_list b);
 int print_S(va_list S);
 
-
-
 /**
  * struct prints - structure to print the various types
  * @a: type to print
